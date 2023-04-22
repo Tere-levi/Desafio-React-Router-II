@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #76323F;
+    --secondary-color: #8F5C6B;
+    --light-color: #F5DEB3;
+    --lighter-color: #FCECC9;
+    --text-color: #3E3E3E;
+    --border-color: #AF7A6D;
+    --font-family: "Roboto", serif;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: var(--light-color);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  .App {
+    background-color: var(--light-color);
+  }
+  
+  .active-class,
+  .inactive-class {
+    background-color: var(--primary-color);
+    text-decoration: none;
+    padding: 4px;
+    margin: 1rem;
+    color: var(--text-color);
+    border: var(--border-color) solid 2px;
+    border-radius: 6px;
+  }
+  
+  .inactive-class {
+    background-color: var(--secondary-color);
+    color: var(--lighter-color);
+  }
+  
+  .navbar {
+    background-image: linear-gradient(to right, var(--primary-color) 0%, var(--secondary-color) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    padding: 0px 2em;
+    margin-bottom: 1em;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    margin: 0;
+    text-align: start;
+  }
+  
+  .form-container {
+    border: var(--border-color) solid 3px;
+    border-radius: 6px;
+  }
+  
+  .hero-container {
+    border: var(--border-color) solid 4px;
+    padding: 1em;
+    margin: 1em;
+  }
+  
